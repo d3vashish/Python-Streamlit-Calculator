@@ -1,0 +1,9 @@
+import streamlit as st
+
+st.title("Simple Addition App")
+
+num1 = st.number_input("Enter first number")
+num2 = st.number_input("Enter second number")
+
+if st.button("Add"):
+    st.success(f"Result: {num1 + num2}")
